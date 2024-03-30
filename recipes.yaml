@@ -1,0 +1,16 @@
+gcc_openmpi:
+  modules:
+    - gcc/10.3.0/picedk
+    - openmpi/4.0.5/b2gt3n
+  CFLAGS: CFLAGS = -Wall -Wshadow -std=c99 -O3 -march=core-avx2 -mtune=core-avx2 -Wfatal-errors -Werror
+  CC: gcc
+  MPICC: mpicc
+
+gcc_openmpi2:
+  modules:
+    - gcc/10.3.0/picedk
+    - openmpi/4.0.5/b2gt3n
+  CFLAGS: CFLAGS = -Wall -Wshadow -std=c99 -O3 -march=core-avx2 -mtune=core-avx2 -Wfatal-errors -Werror
+  CC: gcc
+  MPICC: mpicc
+
